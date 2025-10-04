@@ -23,6 +23,7 @@ model2 = ChatOpenAI(model='gpt-4o', temperature=0.5)
 
 parser = StrOutputParser()
 config = {
+    'run'
     'tags': ['llm app', 'report generation', 'summarization'],
     'metadata': {'model1': 'gpt-4o-mini', 'model1_temp':0.7},
 }
