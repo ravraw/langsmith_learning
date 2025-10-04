@@ -2,8 +2,10 @@ from langchain_openai import ChatOpenAI
 from dotenv import load_dotenv
 from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
+import os
 
 load_dotenv()
+os.environ["LANGSMITH_PROJECT"] = "02_sequential_chain"
 
 prompt1 = PromptTemplate(
     template='Generate a detailed report on {topic}',
